@@ -9,3 +9,11 @@
 #--depth <depth>
 #Create a shallow clone with a history truncated to the specified number of commits. Implies --single-branch unless --no-single-branch is given to fetch the
 #histories near the tips of all branches. If you want to clone submodules shallowly, also pass --shallow-submodules.
+#ls -l
+#-rw-rw-rw-  1 codespace codespace   997 Apr 17 14:45 Boot_exploration.sh
+#- → regular file
+#d → directory
+#l → symbolic link
+#rwx → full permissions for the user (read, write, execute)
+#r-x → group permissions: read and execute only
+#r-- → others permissions: read-only access
