@@ -17,3 +17,7 @@
 #rwx → full permissions for the user (read, write, execute)
 #r-x → group permissions: read and execute only
 #r-- → others permissions: read-only access
+#chmod +x script.sh → everyone can execute the script
+#chmod u+x script.sh → only the owner can execute it
+#chmod o-r secreto.txt → removes read permission from others
+#chmod u+rw,go-rwx privado → owner can read and write; group and others have no permissions at all
