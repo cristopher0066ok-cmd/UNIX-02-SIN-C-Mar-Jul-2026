@@ -1,0 +1,1 @@
+#ls -a is a system command used in the terminal to list files, including hidden ons
