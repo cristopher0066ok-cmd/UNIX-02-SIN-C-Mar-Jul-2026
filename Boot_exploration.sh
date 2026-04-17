@@ -3,3 +3,5 @@
 #ls -lah  view everything with detailed information and human-readable file sizes.”
 #mkdir -- -rf → creates a directory named “-rf”
 #rmdir -- -rf → attempts to remove a directory named “-rf” (only if it is empty)
+#ls --help → shows a short, quick help summary of the ls command (fits on one screen).
+#man ls → opens the full manual in English with detailed information about the ls command
