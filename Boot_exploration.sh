@@ -26,3 +26,5 @@
 # sudo sh -c 'echo "chao" >> /etc/archivo_protegido'
  Run something as root, open a shell, tell the shell everything in quotes, and it interprets it as that root shell.
 #sudo -i enters the root section and to exit we type exit
+# echo "$HOME" expand the variable
+#echo '$HOME' print the variable
