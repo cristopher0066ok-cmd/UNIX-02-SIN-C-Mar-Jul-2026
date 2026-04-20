@@ -28,3 +28,13 @@
 #sudo -i enters the root section and to exit we type exit
 # echo "$HOME" expand the variable
 #echo '$HOME' print the variable
+#echo 'echo "Hola desde mi primer script''' >> hola.sh print "hola desde mi primer script"
+#cat hola.sh gives the order to print
+#./hola.sh: Attempts to execute the script. It usually fails the first time due to missing permissions.
+#ls -l hola.sh: Lists the file details. You use this to check the current permissions (look for the rwx bits).
+#chmod +x hola.sh: Changes the mode of the file to "executable." The +x flag grants the system permission to run the script.
+#./hola.sh (again): Successfully runs the script now that it has the proper execution rights
+# ls /etc doesn't need to be read
+# touch /etc/prueba.txt does need to be read; it belongs to root
+# mkdir ~/mi_carpeta doesn't need to be read; it's your home directory
+# apt install cowsay does need to be installed; it touches system directories
