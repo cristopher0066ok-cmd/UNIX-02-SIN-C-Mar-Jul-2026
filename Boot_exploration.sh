@@ -25,4 +25,4 @@
 #echo "hola" | sudo tee /etc/archivo_protegido > /dev/null This command prevents the contents from being printed to the terminal.
 # sudo sh -c 'echo "chao" >> /etc/archivo_protegido'
  Run something as root, open a shell, tell the shell everything in quotes, and it interprets it as that root shell.
- 
+#sudo -i enters the root section and to exit we type exit
