@@ -38,3 +38,9 @@
 # touch /etc/prueba.txt does need to be read; it belongs to root
 # mkdir ~/mi_carpeta doesn't need to be read; it's your home directory
 # apt install cowsay does need to be installed; it touches system directories
+#touch: Creates the file prueba.txt.
+#chmod 600: Sets private permissions (Read/Write for you only).
+#ls -l: Checks/Lists the file details to verify permissions.
+#chmod 755: Sets public permissions (You can do everything; others can only read/run it). 
+#ls-l: Error (Missing space between the command and the flag).
+#ls -l: Corrected check to verify the new permissions.
