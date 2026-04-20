@@ -21,3 +21,8 @@
 #chmod u+x script.sh → only the owner can execute it
 #chmod o-r secreto.txt → removes read permission from others
 #chmod u+rw,go-rwx privado → owner can read and write; group and others have no permissions at all
+#sudo echo "hola">/etc/archivo_protegido It won't work because sudo only runs with the command next to it
+#echo "hola" | sudo tee /etc/archivo_protegido > /dev/null This command prevents the contents from being printed to the terminal.
+# sudo sh -c 'echo "chao" >> /etc/archivo_protegido'
+ Run something as root, open a shell, tell the shell everything in quotes, and it interprets it as that root shell.
+ 
