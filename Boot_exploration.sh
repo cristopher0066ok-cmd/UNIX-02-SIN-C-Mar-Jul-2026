@@ -44,3 +44,11 @@
 #chmod 755: Sets public permissions (You can do everything; others can only read/run it). 
 #ls-l: Error (Missing space between the command and the flag).
 #ls -l: Corrected check to verify the new permissions.
+#umask: Checked the default permission mask for new files.
+#mkdir: Created a test file (archivo1) and a folder (directorio1).
+#ls -l: Listed files to verify permissions and ownership.
+#sudo apt-get update & upgrade: Refreshed the package list and updated the system software
+#sudo apt-get install acl: Installed the Access Control List utility for granular permission management.
+#sudo chown -R $(whoami) .: Recursively changed the ownership of everything in the current directory to your current user.
+#sudo setfacl -bnR .: Cleared all extended ACL entries recursively, resetting the directory to standard Linux permissions.
+#To solve the problems we face, we shouldn't turn directly to AI, as there are other engineers who may have already encountered the same problems, and we can find their repositories on GitHub or Stack Overflow.
