@@ -19,3 +19,10 @@ stat .
 #Inode (1578789): The unique internal ID number of the folder in the system.
 #Links (2): The number of connections to the folder (itself and the . shortcut inside).
 #Device (7,4): The specific disk partition where the folder is saved.
+cd 
+# change diretory to home directory using absolute route
+cd /home/codespace
+# change diretory to home directory using ~ shortcut
+cd~
+# change diretory to home directory using enviroment variable
+cd $home
