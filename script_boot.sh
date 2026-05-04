@@ -26,3 +26,15 @@ cd /home/codespace
 cd~
 # change diretory to home directory using enviroment variable
 cd $home
+# Where am I
+pwd
+WHOAMI
+#When each file was modified
+ls -lt
+#ls command manual
+man ls 
+ls /dev | head -5
+ls /etc | tail -5
+#ls /etc: Lists all files in the /etc directory (where system settings are stored).
+#| (Pipe): Sends the list to the next command.
+#tail -5: Shows only the last 5 items of that list.
