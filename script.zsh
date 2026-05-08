@@ -23,3 +23,10 @@ head
 touch test.text
 ls-la
 #my files and directories inherit the gid and vid
+
+cat /etc/group | head -10 
+#Shows the first 10 lines of the system groups file.
+groups 
+#Shows the groups of the current user.
+groups USER 
+#Shows the groups of a specific user.
