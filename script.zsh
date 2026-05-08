@@ -46,3 +46,5 @@ grep -E "desarrolladores|operaciones|servicios_web" /etc/group
 # Searches the /etc/group file and shows the lines that contain desarrolladores, operaciones, or servicios_web.
 grep "GID_MIN\|GID_MAX\|SYS_GID" /etc/login.defs
 #Searches the /etc/login.defs file and displays the lines containing GID_MIN, GID_MAX, or SYS_GID, which define the ranges for normal and system group IDs in Linux.
+addgroup diseno  
+#create groups with addgroup
