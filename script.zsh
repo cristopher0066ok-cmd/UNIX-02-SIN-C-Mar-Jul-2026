@@ -30,3 +30,10 @@ groups
 #Shows the groups of the current user.
 groups USER 
 #Shows the groups of a specific user.
+id -u
+#User ID
+id -g
+# Principal Group ID
+id -G
+# All the grups IDS
+
