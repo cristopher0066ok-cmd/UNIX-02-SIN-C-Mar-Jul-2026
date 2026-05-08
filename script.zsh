@@ -10,3 +10,6 @@ cat → Displays the contents of a file.
 /etc/passwd → Linux system file containing user information.
 |  → Sends the output of one command to the next command.
 head → Shows only the first lines (10 by default).
+touch test.text
+ls-la
+#my files and directories inherit the gid and vid
