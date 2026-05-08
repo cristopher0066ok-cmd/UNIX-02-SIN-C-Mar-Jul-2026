@@ -48,3 +48,9 @@ grep "GID_MIN\|GID_MAX\|SYS_GID" /etc/login.defs
 #Searches the /etc/login.defs file and displays the lines containing GID_MIN, GID_MAX, or SYS_GID, which define the ranges for normal and system group IDs in Linux.
 addgroup diseno  
 #create groups with addgroup
+usermod -aG developers root` 
+ #adds the root user to the developers group.
+usermod -aG design root` 
+ #adds the root user to the design group.
+id root`  
+#displays the root user's groups and information.
