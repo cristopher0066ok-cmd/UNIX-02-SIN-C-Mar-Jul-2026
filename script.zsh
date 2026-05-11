@@ -72,4 +72,15 @@ ls -ls .../reportes/:
 sudo chgrp developers file
 #Changes the file’s group owner to developers.
 ls -la folder/
+ chgrp diseno \
+~/lab_chgrp/proyectos/config.json \
+~/lab_chgrp/reportes/informe.txt
 #Shows the files in the folder with detailed information, including permissions, owner, and group.
+#This command changes the group owner of both files to the group diseño:
+#config.json
+#informe.txt
+#sudo gives administrator permissions, and \ allows the command to continue on the next line.
+ls -la ~/lab_chgrp/proyectos/
+#Shows all files in the proyectos folder with detailed information like permissions, owner, and group.
+ls -la ~/lab_chgrp/reportes/
+#Shows all files in the reportes folder with detailed information such as permissions, owner, and group.
