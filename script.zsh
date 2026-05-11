@@ -49,9 +49,11 @@ addgroup diseno
 #create groups with addgroup
 usermod -aG developers root` 
  #adds the root user to the developers group.
-usermod -aG design root` 
+usermod -aG design root` id
  #adds the root user to the design group.
 id root`  
 #displays the root user's groups and information.
 grep "desarrolladores\|diseno" /etc/group
 #Search and display all lines in the /etc/group file that contain the word "developers" OR the word "design"
+adduser $USER root marketing
+#It is a Linux administration command designed to add an existing user to the system to specific groups, granting them additional permissions.
