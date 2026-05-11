@@ -84,3 +84,8 @@ ls -la ~/lab_chgrp/proyectos/
 #Shows all files in the proyectos folder with detailed information like permissions, owner, and group.
 ls -la ~/lab_chgrp/reportes/
 #Shows all files in the reportes folder with detailed information such as permissions, owner, and group.
+chgrp -R desarrolladores ~/lab_chgrp/scripts/
+ls -laR ~/lab_chgrp/scripts/
+#recursively changes an entire directory
+chgrp -Rv diseno ~/lab_chgrp/reportes/
+#verbose to see what changes
