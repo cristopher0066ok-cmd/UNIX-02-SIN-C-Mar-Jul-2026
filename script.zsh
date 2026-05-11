@@ -61,3 +61,5 @@ groupadd grupo_temporal
 #Creates a new group named "grupo_temporal".
 usermod -aG grupo_temporal root
 #Adds the root user to that group as a secondary member without removing its existing group memberships. 
+usermod -G desarrolladores root
+#Remove all child groups except developers
