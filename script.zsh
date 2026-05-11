@@ -63,3 +63,5 @@ usermod -aG grupo_temporal root
 #Adds the root user to that group as a secondary member without removing its existing group memberships. 
 usermod -G desarrolladores root
 #Remove all child groups except developers
+usermod -aG diseno,marketing,grupo_temporal root
+#return
