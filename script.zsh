@@ -65,3 +65,11 @@ usermod -G desarrolladores root
 #Remove all child groups except developers
 usermod -aG diseno,marketing,grupo_temporal root
 #return
+ls -la .../proyectos/:
+# Displays all files (including hidden ones) in a long list format, showing permissions, owners, and dates.
+ls -ls .../reportes/:
+# Displays files in a long list format and adds the file size (in blocks) at the beginning of each line.
+sudo chgrp developers file
+#Changes the file’s group owner to developers.
+ls -la folder/
+#Shows the files in the folder with detailed information, including permissions, owner, and group.
