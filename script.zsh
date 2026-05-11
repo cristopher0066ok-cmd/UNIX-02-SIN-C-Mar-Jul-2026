@@ -23,7 +23,6 @@ head
 touch test.text
 ls-la
 #my files and directories inherit the gid and vid
-
 cat /etc/group | head -10 
 #Shows the first 10 lines of the system groups file.
 groups 
@@ -54,3 +53,5 @@ usermod -aG design root`
  #adds the root user to the design group.
 id root`  
 #displays the root user's groups and information.
+grep "desarrolladores\|diseno" /etc/group
+#Search and display all lines in the /etc/group file that contain the word "developers" OR the word "design"
