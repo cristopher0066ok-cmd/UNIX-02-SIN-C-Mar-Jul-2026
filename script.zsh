@@ -57,3 +57,7 @@ grep "desarrolladores\|diseno" /etc/group
 #Search and display all lines in the /etc/group file that contain the word "developers" OR the word "design"
 adduser $USER root marketing
 #It is a Linux administration command designed to add an existing user to the system to specific groups, granting them additional permissions.
+groupadd grupo_temporal
+#Creates a new group named "grupo_temporal".
+usermod -aG grupo_temporal root
+#Adds the root user to that group as a secondary member without removing its existing group memberships. 
