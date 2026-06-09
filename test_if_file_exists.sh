@@ -7,3 +7,7 @@ if [[ -f "${FILENAME}" ]]; then
 else
     touch "${FILENAME}"
 fi
+
+if [[ ! -f "${FILENAME}" ]]; then
+    touch "${FILENAME}"
+fi
