@@ -1,17 +1,23 @@
 #!/bin/bash
-# Define the target file name
 FILE="output.txt"
-
-# Create the file if it doesn't exist, or update its timestamp
 touch "${FILE}"
 
-# Loop runs UNTIL the file has a size greater than 0 bytes (-s)
+# Función que corre en segundo plano para simular la acción del usuario
+simulate_user_input() {
+    echo "  [Background] Waiting 6 seconds before writing to the file..."
+    sleep 6
+    echo "  [Background] Writing content to ${FILE} now!"
+    echo "until_loop_will_now_stop!" > "${FILE}"
+}
+
+# ❶ Ejecutamos la función en segundo plano usando '&'
+simulate_user_input &
+
+# ❷ El script principal continúa inmediatamente con el ciclo until
 until [[ -s "${FILE}" ]]; do
     echo "${FILE} is empty..."
     echo "Checking again in 2 seconds..."
-    # Pause the execution for 2 seconds before checking again
     sleep 2
 done
 
-# This executes only when the loop breaks (file is no longer empty)
 echo "${FILE} appears to have some content in it!"
