@@ -11,3 +11,18 @@ awk '{print $1}' log.txt
 awk '{print $3}' log.txt
 awk '{print $1,$2,$3}' log.txt
 awk '{print $1,$NF}' log.txt
+cat << 'EOF' > log.csv
+192.168.1.1,10:00:23
+10.0.0.5,10:01:15
+8.8.8.8,10:02:01
+EOF
+awk 'NR < 10' log.txt
+
+grep "42.236.10.117" log.txt
+#What it does: Filters and displays only the full lines from log.txt that contain the IP address 42.236.10.117.
+awk '{print $7}'
+#What it does: Extracts and prints only the 7th column (field) of the text it receives, ignoring everything else.
+grep "42.236.10.117" log.txt | awk '{print $7}'
+#What it does: Combines both commands using a pipe (|).
+#The Process: First, grep finds all lines belonging to that specific IP. Then, awk takes those lines and extracts only the 7th column (usually the requested URL or path).
+#Final Result: You see exactly what pages or resources that specific IP address accessed.
