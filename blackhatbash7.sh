@@ -26,3 +26,8 @@ grep "42.236.10.117" log.txt | awk '{print $7}'
 #What it does: Combines both commands using a pipe (|).
 #The Process: First, grep finds all lines belonging to that specific IP. Then, awk takes those lines and extracts only the 7th column (usually the requested URL or path).
 #Final Result: You see exactly what pages or resources that specific IP address accessed.
+sed 's/Mozilla/Godzilla/g' log.txt
+sed 's/Mozilla/Godzilla/g' log.txt > newlog.txt
+sed 's/ //g' log.txt
+sed '1d' log.txt
+sed -i '1d' log.txt
